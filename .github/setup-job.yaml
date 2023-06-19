@@ -1,0 +1,17 @@
+on:
+  workflow_call:
+    outputs:
+      git-sha:
+        type: string
+        required: true
+      git-ref:
+        type: string
+        required: true
+
+jobs:
+  align-build-information:
+    steps:
+
+    - name: just echo
+      run: |
+	echo "ran it"
