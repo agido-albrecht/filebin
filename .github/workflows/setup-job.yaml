@@ -12,8 +12,9 @@ on:
 
 jobs:
   align-build-information:
+    runs-on: ubuntu-latest
     steps:
 
     - name: just echo
       run: |
-	echo "ran it"
+        echo "ran it"
