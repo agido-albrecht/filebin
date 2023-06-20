@@ -3,14 +3,6 @@ name: "test action"
 on:
   push:
     branches: [ main ]
-  workflow_call:
-    outputs:
-      git-sha:
-        type: string
-        required: true
-      git-ref:
-        type: string
-        required: true
 
 jobs:
   align-build-information:
